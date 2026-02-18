@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Festival Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="logo-block">
+            <h1>​Aurora Festival Lab</h1>
+            <p>Themed immersion for curious creatives.</p>
+        </div>
+        <nav class="header-actions">
+            <button class="theme-button" data-theme="forest">Forest Glow</button>
+            <button class="theme-button" data-theme="dusk">Dusk Bloom</button>
+            <button class="theme-button" data-theme="midnight">Midnight Pulse</button>
+        </nav>
+    </header>
+
+    <main class="layout">
+        <section class="hero">
+            <h2>Plan a small-batch learning retreat</h2>
+            <p id="statusMessage">Loading insights...</p>
+            <div class="media-preview">
+                <img id="bannerImage" src="banner.jpg" alt="Aurora themed banner">
+                <div class="video-frame">
+                    <video controls>
+                        <source src="promo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <audio controls>
+                    <source src="intro.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </section>
+
+        <section class="content-grid">
+            <div class="info-card">
+                <h3>Immersive Microsessions</h3>
+                <ul>
+                    <li>Color narratives</li>
+                    <li>Biophilic setups</li>
+                    <li>Energizing rituals</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Logistics Snapshot</h3>
+                <ul>
+                    <li>Indoor/outdoor switch</li>
+                    <li>Audio-visual ready</li>
+                    <li>Flexible seating</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>Community Pulse</h3>
+                <ul>
+                    <li>Responsible sourcing</li>
+                    <li>Inclusive cues</li>
+                    <li>Hands-on labs</li>
+                </ul>
+            </div>
+
+            <div class="form-block">
+                <h3>Register your crew</h3>
+                <form id="registrationForm" class="registration-form">
+                    <label>Name<span>*</span></label>
+                    <input type="text" id="name" placeholder="Ava Explorer" required>
+
+                    <label>Email<span>*</span></label>
+                    <input type="email" id="email" placeholder="contact@studio.com" required>
+
+                    <label>Guests<span>*</span></label>
+                    <input type="number" id="guests" min="1" value="1" required>
+
+                    <label>Session style</label>
+                    <select id="sessionType">
+                        <option value="workshop">Workshop Series</option>
+                        <option value="seminar">Seminar Pod</option>
+                        <option value="networking">Networking Lab</option>
+                    </select>
+
+                    <label>Accessibility</label>
+                    <select id="accessibilitySelect">
+                        <option value="standard">Standard flow</option>
+                        <option value="caption">Captions enabled</option>
+                        <option value="quiet">Quiet setup</option>
+                    </select>
+
+                    <label>Intent Notes</label>
+                    <textarea id="intentNotes" rows="3" placeholder="Share a preferred vibe..."></textarea>
+
+                    <button type="submit" id="submitButton">Send registration</button>
+                </form>
+                <p id="submissionMessage" class="submission-message"></p>
+            </div>
+        </section>
+
+        <section class="summary-panel" id="summaryPanel">
+            <h3>Live configuration</h3>
+            <ul id="summaryList">
+                <li>Guests: 1</li>
+                <li>Session style: Workshop Series</li>
+                <li>Projected total: $45</li>
+            </ul>
+            <p class="calculation-note">Adjust any field to refresh this forecast.</p>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Stay curious, stay luminous.</p>
+        <p class="light-prompt">Themes shift as you choose; your studio comes alive instantly.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

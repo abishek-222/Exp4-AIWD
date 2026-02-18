@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #111827, #1e293b);
+    border-bottom: 1px solid #334155;
+}
+
+.logo-block h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.logo-block p {
+    margin: 0.2rem 0 0;
+    font-size: 0.95rem;
+    color: #94a3b8;
+}
+
+.header-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.theme-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 999px;
+    background-color: #475569;
+    color: #e2e8f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.layout {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero {
+    background: rgba(51, 65, 85, 0.6);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #334155;
+}
+
+.hero h2 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.media-preview {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.media-preview img {
+    width: 100%;
+    border-radius: 0.8rem;
+    border: 1px solid #475569;
+}
+
+.video-frame {
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 1px solid #475569;
+}
+
+.video-frame video {
+    width: 100%;
+    display: block;
+}
+
+audio {
+    width: 100%;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.info-card {
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid #475569;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: 180px;
+}
+
+.info-card ul {
+    padding-left: 1rem;
+}
+
+.form-block {
+    grid-column: span 2;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid #475569;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.registration-form label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    padding: 0.65rem 0.75rem;
+    border-radius: 0.6rem;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: #e2e8f0;
+    font-size: 1rem;
+}
+
+.registration-form span {
+    color: #f97316;
+    margin-left: 0.25rem;
+}
+
+.registration-form textarea {
+    resize: vertical;
+}
+
+#submitButton {
+    background: linear-gradient(135deg, #f97316, #fb8c00);
+    border: none;
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #0f172a;
+}
+
+.summary-panel {
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid #334155;
+    border-radius: 1rem;
+    padding: 1.25rem;
+}
+
+.summary-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.calculation-note {
+    margin-top: 0.85rem;
+    color: #94a3b8;
+}
+
+.submission-message {
+    min-height: 2rem;
+    color: #86efac;
+    margin-top: 0.5rem;
+}
+
+.page-footer {
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #334155;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    background: #020617;
+}
